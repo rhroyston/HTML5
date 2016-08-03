@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- HTML5 Declaration - Put nothing above DOCTYPE element -->
+<!-- W3C recommends declaring the primary language -->
+<html lang="en">
+
+        <!-- ASCII and Standard Unicode Characters -->
+        <meta charset=utf-8 />
+        <!-- Mobile viewing enhancement -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Description should be roughly 155 characters, no double quotes, use keywords -->
+        <meta name="description" content="Basic HTML5 markup structure." />
+        <!-- Format as Primary Keyword - Secondary Keyword | Brand Name, keep under 55 characters -->
+        <title>HTML5 Outline - HTML5 Elements </title>
+        <!-- Minimize the number of CSS files for performance -->
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+            </script>
+            <noscript>
+                <strong>Warning !</strong>
+                Because your browser does not support HTML5, some elements are created using JavaScript.
+                Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+            </noscript>
+        <![endif]-->
+
+    <body>
+        <header>
+            <!-- Authors are advised to use heading rank (h1-h6) to convey document structure -->
+            <h1>This is page header content</h1>
+        </header>
+        <main>
+            <section>
+                <header>
+                    <h2>This is section header content</h2>
+                </header>
+                <article>
+                    <header>
+                        <h4>This is article header content</h4>
+                    </header>
+                    <footer>
+                        Article footer content.
+                    </footer>
+                </article>
+            </section>
+        </main>
+        <!-- Put scripts just before the closing body tag for performance purposes also put all scripts in single file -->
+        <script>
+            /*
+            Multiline Comment - Tell about your script
+            Created by Ron Royston, https://rack.pub
+            https://github.com/rhroyston/html5
+            License: MIT
+            
+            usage
+            myscript.myvar
+            myscript.hello(name);
+            */
+                
+            //Revealing Module Pattern (Public & Private) w Public Namespace 'myscript'
+            var myscript = (function() {
+                // reference document only once for performance
+                var doc = document;
+                // object to expose as public properties and methods such as clock.now
+                var pub = {};
+                
+                //myscript.color
+                pub.color = 'red';
+                
+                //myscript.hello
+                pub.hello = function (name) {
+                    alert('Hello ' + name);
+                };
+                
+                //API
+                return pub;
+            }());
+        </script>
+    </body>
+</html>
