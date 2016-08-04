@@ -1,79 +1,98 @@
 <!DOCTYPE html>
-<!-- HTML5 Declaration - Put nothing above DOCTYPE element -->
-<!-- W3C recommends declaring the primary language -->
 <html lang="en">
-
-        <!-- ASCII and Standard Unicode Characters -->
-        <meta charset=utf-8 />
-        <!-- Mobile viewing enhancement -->
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!-- Description should be roughly 155 characters, no double quotes, use keywords -->
-        <meta name="description" content="Basic HTML5 markup structure." />
-        <!-- Format as Primary Keyword - Secondary Keyword | Brand Name, keep under 55 characters -->
-        <title>HTML5 Outline - HTML5 Elements </title>
-        <!-- Minimize the number of CSS files for performance -->
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        <!--[if lt IE 9]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
-            </script>
-            <noscript>
-                <strong>Warning !</strong>
-                Because your browser does not support HTML5, some elements are created using JavaScript.
-                Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
-            </noscript>
-        <![endif]-->
-
-    <body>
-        <header>
-            <!-- Authors are advised to use heading rank (h1-h6) to convey document structure -->
-            <h1>This is page header content</h1>
-        </header>
-        <main>
-            <section>
-                <header>
-                    <h2>This is section header content</h2>
-                </header>
-                <article>
-                    <header>
-                        <h4>This is article header content</h4>
-                    </header>
-                    <footer>
-                        Article footer content.
-                    </footer>
-                </article>
-            </section>
-        </main>
-        <!-- Put scripts just before the closing body tag for performance purposes also put all scripts in single file -->
-        <script>
-            /*
-            Multiline Comment - Tell about your script
-            Created by Ron Royston, https://rack.pub
-            https://github.com/rhroyston/html5
-            License: MIT
+<!-- 
+    Created by Ron Royston, https://rack.pub, © 2016 MIT License
+    Available online at https://github.com/rhroyston/html5
+        
+        ⚠ No comments above DOCTYPE declaration.
+        
+        ⚠ Consider page viewing experience across device types, sometimes called Responsive Web Design, RWD.
+        
+        ⚐ Mozilla Developer Network HTML ELEMENT REFERENCE
+            https://developer.mozilla.org/en-US/docs/Web/HTML/Element
             
-            usage
-            myscript.myvar
-            myscript.hello(name);
-            */
-                
-            //Revealing Module Pattern (Public & Private) w Public Namespace 'myscript'
-            var myscript = (function() {
-                // reference document only once for performance
-                var doc = document;
-                // object to expose as public properties and methods such as clock.now
-                var pub = {};
-                
-                //myscript.color
-                pub.color = 'red';
-                
-                //myscript.hello
-                pub.hello = function (name) {
-                    alert('Hello ' + name);
-                };
-                
-                //API
-                return pub;
-            }());
-        </script>
-    </body>
+        ⚐ Validate HTML with The W3C Markup Validation Service
+            https://validator.w3.org/
+            
+        ⚐ Favicon image displays in browser tab
+            http://realfavicongenerator.net/
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile viewing enhancement -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <!-- ⚠ Description should be roughly 155 characters, no double quotes, use keywords -->
+    <meta name="description" content="Firebase v3 Web Auth Full Functionality Example Code" />
+    <!-- ⚠ Format as Primary Keyword - Secondary Keyword | Brand Name, keep under 55 characters -->
+    <title>HTML5 Boilerplate</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+    
+    <style>
+        /*
+            CSS Area
+                ⚠ Separate CSS files are cached and preferred.
+                ⚠ Minimize the number of CSS files for performance.
+                ⚠ Re RWD, Avoid attempting targeting every device type using CSS Media Queries.
+        */  
+    </style>
+</head>
+
+<body>
+        
+    <main>
+    
+    </main>
+        
+    <!-- IE Compatibility shims DO NOT DELETE-->
+      <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js""></script>
+      <![endif]-->
+
+      <!--[if IE]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.7/es5-shim.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/flexie/1.0.3/flexie.min.js"></script>
+        <link href="../assets/ie.css" rel="stylesheet">
+      <![endif]-->
+    <!-- end shims -->
+        
+    <script>
+        /*
+        ⚠ Put Javascript just before closing body tag.
+        ⚠ Separate Javascript files are cached and preferred over inline like this.
+        ⚠ Serve only one, or as little as possible, JavaScript files for performance purposes.
+        ⚠ Minify JavaScript for further initial page rendering performance improvement, https://jscompress.com/.
+        
+        ⚐ A Revealing Module Pattern (Public & Private) w Public Namespace 'myscript' like below avoids collisions with other scripts.
+
+            myScript.color --> red 
+            myScript.hello('Jane') --> Hello Jane
+        */
+            
+        var myScript = (function() {
+            
+            // reference document only once for performance
+            var doc = document;
+            
+            // object to expose as public properties and methods such as clock.now
+            var pub = {};
+            
+            //myscript.color
+            pub.color = 'red';
+            
+            //myscript.hello
+            pub.hello = function (name) {
+                alert('Hello ' + name);
+            };
+            
+            //API
+            return pub;
+        }());
+    </script>
+</body>
+
 </html>
