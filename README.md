@@ -1,34 +1,24 @@
-# [HTML Character Codes](https://rack.pub/codes)
+# [HTML Boilerplace](https://github.com/rhroyston/html5)
 ## Synopsis
 
-HTML character codes intuitively ordered with optional auto copy to clipboard functionality.
-
-These are select, commonly used HTML character codes.  The aim of this web application is usefulness and simplicity.  
-
-For an exhaustive list of HTML character codes, see [HTML5 Reference](https://dev.w3.org/html5/html-author/charref).
-
-## Code Example
-
-<img src="https://github.com/rhroyston/rhroyston.github.io/blob/master/html-character-codes.jpg" alt="screenshot">
+HTML5 Boilerplace with helpful links embedded in comments.
 
 ## Motivation
 
-The sites I have found are too lengthy, list ubscure HTML character codes, and overall the codes are displayed in an unintuitive order.  I found myself wanting automatic copy to clipboard upon clicking the character as well.
+Fame and fortune and everything that goes with it.
 
 ## Installation
 
-[HTML Character Codes](https://rack.pub/codes) is online as a Web app.  Simply nagivate to the URL https://rack.pub/codes.
+Paste it in a text editor and save as .html.
 
 ## API Reference
 
-The Web interface is the only supported interface at this time.
+Mozilla Developer Network's [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) Page.
 
 ## Contributors
 
-Ron Royston
-
-I would like to thank Zeno Rocha for [clipboard.js](https://github.com/zenorocha/clipboard.js).
+Ron Royston 
 
 ## License
 
-Ron Royston, https://rack.pub, MIT License
+© 2016 Ron Royston, MIT License, https://rack.pub
